@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahil Khan • Product + Delivery Leader</title>
+  <meta name="description" content="Technical Product and Project leader in Life Sciences delivering AI, data, and cloud solutions end to end." />
+  <meta property="og:title" content="Rahil Khan • Portfolio" />
+  <meta property="og:description" content="Product strategy and delivery excellence on one page." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :root { color-scheme: light dark; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .bg-grid { background-image: radial-gradient(circle at 1px 1px, rgb(0 0 0 / 0.08) 1px, transparent 0); background-size: 24px 24px; }
+    .card-hover { transition: transform .25s ease, box-shadow .3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px -12px rgba(0,0,0,.35); }
+    .chip { border: 1px solid rgb(0 0 0 / .08); }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.7); }
+    @media (prefers-color-scheme: dark){ .glass { background: rgba(17,24,39,.6); } }
+  .logos-marquee{position:relative;overflow:hidden;mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 8%,black 92%,transparent)}
+.logos-track{display:flex;gap:48px;align-items:center;white-space:nowrap;animation:scroll 28s linear infinite}
+.logos-item img{height:28px;opacity:.9;filter:grayscale(1);transition:transform .2s ease,opacity .2s ease}
+.logos-item img:hover{opacity:1;transform:translateY(-2px)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.logos-track{animation:none}}
+  .active-link{color:#4f46e5;border-bottom:2px solid #4f46e5}
+#scrollProgress{transition:width .15s linear}
+.tilt-card{transform-style:preserve-3d;will-change:transform}
+@media (prefers-reduced-motion: reduce){.tilt-card{transform:none!important}}
+</style>
+</head>
+<body class="min-h-screen bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <div id="scrollProgress" class="fixed top-0 left-0 h-1 bg-indigo-600 z-[60]" style="width:0"></div>
+  <!-- Top aura -->
+  <div id="aura" class="pointer-events-none fixed inset-x-0 top-0 h-[50vh] bg-gradient-to-b from-indigo-300/40 via-purple-300/30 to-transparent dark:from-indigo-600/30 dark:via-fuchsia-600/20"></div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50">
+    <div class="glass bg-white/60 dark:bg-gray-900/40 border-b border-black/5 dark:border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+        <a href="#home" class="font-extrabold tracking-tight text-xl">Rahil<span class="text-indigo-600">Khan</span></a>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#skills" class="hover:text-indigo-600">Skills</a>
+          <a href="#experience" class="hover:text-indigo-600">Experience</a>
+          <a href="#cases" class="hover:text-indigo-600">Case studies</a>
+          <a href="#publications" class="hover:text-indigo-600">Publications</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+          <button id="themeBtn" class="p-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/10" title="Toggle theme" aria-label="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden bg-white/90 dark:bg-gray-900/80 backdrop-blur border-t border-black/5 dark:border-white/10">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-3 grid gap-2 text-sm font-medium">
+          <a href="#about" class="py-2">About</a>
+          <a href="#skills" class="py-2">Skills</a>
+          <a href="#experience" class="py-2">Experience</a>
+          <a href="#cases" class="py-2">Case studies</a>
+          <a href="#publications" class="py-2">Publications</a>
+          <a href="#contact" class="py-2">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-18 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div data-aos="fade-right" data-aos-duration="800">
+          <p class="text-sm uppercase tracking-widest text-indigo-600 font-semibold">Portfolio</p>
+          <h1 class="mt-3 text-4xl md:text-6xl font-extrabold leading-tight">
+            <span>Rahil Khan</span>
+            <span class="block mt-2 text-indigo-600">Product Strategy + Delivery Excellence</span>
+          </h1>
+          <p class="mt-5 text-lg text-gray-700 dark:text-gray-300 max-w-2xl" id="summary"></p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="assets/Rahil_Khan_Technical_Product_Manager.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold card-hover">Download Product Resume</a>
+            <a href="assets/Rahil_Khan_Technical_Project_Manager.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 border border-black/5 dark:border-white/10 font-semibold card-hover">Download Project Resume</a>
+          </div>
+          <div class="mt-6 text-sm text-gray-600 dark:text-gray-400">
+            <a href="mailto:khan98rahil@gmail.com" class="underline">khan98rahil@gmail.com</a>
+            <span class="mx-2">•</span>
+            <a href="https://www.linkedin.com/in/rahilkhan98/" class="underline" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="relative" data-aos="fade-left" data-aos-duration="800">
+          <div class="relative mx-auto w-full max-w-md">
+            <div class="absolute -inset-10 bg-gradient-to-tr from-indigo-500/30 via-fuchsia-400/20 to-transparent rounded-full blur-3xl"></div>
+            <div class="relative rounded-3xl p-1 bg-gradient-to-br from-indigo-500 via-purple-500 to-fuchsia-500">
+              <div class="rounded-2xl bg-white dark:bg-gray-950 p-6 md:p-8">
+                <div class="aspect-[4/3] bg-grid rounded-xl flex items-center justify-center overflow-hidden">
+  <img src="assets/profile.jpg" alt="Rahil Khan" class="object-cover w-full h-full rounded-xl" />
+</div>
+                <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+                  <div class="p-3 rounded-xl bg-gray-50 dark:bg-gray-900"><div class="text-2xl font-extrabold" id="stat1" data-target="5" data-suffix="+">0</div><div class="text-xs text-gray-600 dark:text-gray-400">Years experience</div></div>
+                  <div class="p-3 rounded-xl bg-gray-50 dark:bg-gray-900"><div class="text-2xl font-extrabold" id="stat2" data-prefix="$" data-target="1" data-suffix="M+">0</div><div class="text-xs text-gray-600 dark:text-gray-400">Savings influenced</div></div>
+                  <div class="p-3 rounded-xl bg-gray-50 dark:bg-gray-900"><div class="text-2xl font-extrabold" id="stat3" data-target="100" data-suffix="+">0</div><div class="text-xs text-gray-600 dark:text-gray-400">Protocols optimized</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars + Logos -->
+  <section id="pillars" class="py-6 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <!-- Pillars strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
+        <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-900 flex items-center gap-3" data-aos="fade-up" data-aos-delay="0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="shrink-0"><path d="M12 3l9 4-9 4-9-4 9-4Z"/><path d="M3 7l9 4 9-4"/><path d="M3 12l9 4 9-4"/></svg>
+          <span class="font-semibold">Product Strategy</span>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-900 flex items-center gap-3" data-aos="fade-up" data-aos-delay="60">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="shrink-0"><path d="M3 12h18"/><path d="M7 8v8"/><path d="M12 5v14"/><path d="M17 10v6"/></svg>
+          <span class="font-semibold">Delivery Excellence</span>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-900 flex items-center gap-3" data-aos="fade-up" data-aos-delay="120">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="shrink-0"><path d="M12 20v-6"/><circle cx="12" cy="8" r="3"/><path d="M19.4 15A7 7 0 1 0 4.6 15"/></svg>
+          <span class="font-semibold">Data and AI</span>
+        </div>
+        <div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-900 flex items-center gap-3" data-aos="fade-up" data-aos-delay="180">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="shrink-0"><path d="M2 12h20"/><path d="M4 6h16"/><path d="M6 18h12"/></svg>
+          <span class="font-semibold">Life Sciences</span>
+        </div>
+      </div>
+
+      <!-- Logos strip -->
+      <div class="mt-6 rounded-xl border border-black/5 dark:border-white/10 p-4">
+        <div class="text-xs uppercase tracking-wider text-gray-500 mb-3">Worked with</div>
+        <div class="logos-marquee" aria-label="Technology logos">
+          <div class="logos-track">
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/amazonaws/1f2937" loading="lazy" decoding="async" alt="AWS" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/databricks/1f2937" loading="lazy" decoding="async" alt="Databricks" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/snowflake/1f2937" loading="lazy" decoding="async" alt="Snowflake" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/postgresql/1f2937" loading="lazy" decoding="async" alt="PostgreSQL" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/python/1f2937" loading="lazy" decoding="async" alt="Python" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/fastapi/1f2937" loading="lazy" decoding="async" alt="FastAPI" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/streamlit/1f2937" loading="lazy" decoding="async" alt="Streamlit" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/jira/1f2937" loading="lazy" decoding="async" alt="Jira" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/confluence/1f2937" loading="lazy" decoding="async" alt="Confluence" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/git/1f2937" loading="lazy" decoding="async" alt="Git" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/bitbucket/1f2937" loading="lazy" decoding="async" alt="Bitbucket" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/miro/1f2937" loading="lazy" decoding="async" alt="Miro" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/figma/1f2937" loading="lazy" decoding="async" alt="Figma" /></span>
+            <!-- duplicate set for seamless loop -->
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/amazonaws/1f2937" loading="lazy" decoding="async" alt="AWS" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/databricks/1f2937" loading="lazy" decoding="async" alt="Databricks" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/snowflake/1f2937" loading="lazy" decoding="async" alt="Snowflake" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/postgresql/1f2937" loading="lazy" decoding="async" alt="PostgreSQL" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/python/1f2937" loading="lazy" decoding="async" alt="Python" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/fastapi/1f2937" loading="lazy" decoding="async" alt="FastAPI" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/streamlit/1f2937" loading="lazy" decoding="async" alt="Streamlit" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/jira/1f2937" loading="lazy" decoding="async" alt="Jira" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/confluence/1f2937" loading="lazy" decoding="async" alt="Confluence" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/git/1f2937" loading="lazy" decoding="async" alt="Git" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/bitbucket/1f2937" loading="lazy" decoding="async" alt="Bitbucket" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/miro/1f2937" loading="lazy" decoding="async" alt="Miro" /></span>
+            <span class="logos-item"><img src="https://cdn.simpleicons.org/figma/1f2937" loading="lazy" decoding="async" alt="Figma" /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">About</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">One leader across product and delivery</p>
+        </div>
+        <div class="md:col-span-2">
+          <div id="aboutText" class="prose prose-indigo dark:prose-invert max-w-none"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills combined view -->
+  <section id="skills" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-end justify-between">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Skills</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">Product plus Delivery plus Data</p>
+        </div>
+      </div>
+      <div id="skillsWrap" class="mt-8 grid md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Experience with dual tags inside each role -->
+  <section id="experience" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Experience</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Single timeline with product and delivery highlights</p>
+      <div id="expTimeline" class="mt-10 space-y-6"></div>
+    </div>
+  </section>
+
+  <!-- Case studies show both viewpoints -->
+  <section id="cases" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Case studies</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-400">Each card shows product outcomes and delivery execution</p>
+      <div id="highlights" class="mt-8 grid md:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Publications</h2>
+      <div id="pubs" class="mt-6"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 md:py-20 border-t border-black/5 dark:border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Get in touch</h2>
+          <p class="mt-2 text-gray-600 dark:text-gray-400">Open to roles in Product Management and Technical Project Management</p>
+          <div class="mt-6 space-y-3 text-gray-800 dark:text-gray-200">
+            <div class="flex items-center gap-3"><span class="text-indigo-600">✉</span><a class="underline" href="mailto:khan98rahil@gmail.com">khan98rahil@gmail.com</a></div>
+            <div class="flex items-center gap-3"><span class="text-indigo-600">☎</span><a class="underline" href="tel:+919560634732">+91 95606 34732</a></div>
+            <div class="flex items-center gap-3"><span class="text-indigo-600">in</span><a class="underline" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rahilkhan98/">linkedin.com/in/rahilkhan98</a></div>
+          </div>
+        <div class="flex items-center gap-3 mt-3"><span class="text-indigo-600">gh<\/span><a class="underline" target="_blank" rel="noopener" href="https:\/\/github.com\/rahilkhan98">github.com\/rahilkhan98<\/a><\/div>
+        <\/div>
+        <div class=\"rounded-2xl p-6 bg-gray-50 dark:bg-gray-900">
+          <form action="mailto:khan98rahil@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+            <div>
+              <label class="text-sm font-medium">Your email</label>
+              <input class="mt-1 w-full rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-gray-950 px-4 py-3" type="email" name="email" required />
+            </div>
+            <div>
+              <label class="text-sm font-medium">Message</label>
+              <textarea class="mt-1 w-full rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-gray-950 px-4 py-3" name="message" rows="5" required></textarea>
+            </div>
+            <button class="px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold card-hover" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 border-t border-black/5 dark:border-white/10 text-center text-sm text-gray-600 dark:text-gray-400">
+    Built with Tailwind CSS and AOS. One page that shows both product and delivery.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, offset: 80, duration: 700 });
+
+    // Reduced motion check
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const setTheme = t => { document.documentElement.classList.toggle('dark', t === 'dark'); localStorage.setItem('theme', t); };
+    const saved = localStorage.getItem('theme');
+    setTheme(saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    themeBtn.addEventListener('click', () => setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark'));
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+    // Unified data sourced from both resumes
+    const profileData = {
+      summary: 'Technical Product Manager with 5+ years delivering AI clinical applications and data products from concept to scale. Adept at product vision, stakeholder management, leading cross functional teams, and turning complex requirements into measurable outcomes including $1M+ annual savings and double digit adoption growth. Deep expertise in clinical trials and data driven decision making.',
+      about: `I build the right thing and ship it the right way. My work spans 0 to 1 product discovery, 1 to 100 scaling, and hands on delivery across AI, data, and cloud. I partner with stakeholders, regulatory, and IT to embed products into enterprise ecosystems while running governance, risk, and quality. Recent focus areas include an Inclusion and Exclusion Criteria Optimizer and a Clinical Data Review modernization with seven figure impact.`,
+      stats: ['5+', '$1M+', '100+'],
+      skills: [
+        { group: 'Product Management', items: ['Product Discovery 0-1', 'Scaling 1-100', 'PRDs', 'Roadmaps', 'Backlog Prioritization', 'OKRs and KPIs', 'A/B Testing', 'Release Management', 'Stakeholder Management'] },
+        { group: 'Project and Delivery', items: ['Agile and SDLC', 'Scrum ceremonies', 'Hybrid delivery', 'RAID and Governance', 'Risk and Compliance', 'UAT and Quality', 'Change Management'] },
+        { group: 'Data and AI', items: ['Python', 'SQL', 'GenAI', 'FastAPI', 'Streamlit', 'ETL and PySpark', 'Knowledge Graphs', 'RAG', 'Data Modeling'] },
+        { group: 'Cloud and Tools', items: ['AWS', 'Databricks', 'Delta Lake', 'PostgreSQL', 'Git and Bitbucket', 'Jira and Confluence', 'Miro and Figma'] },
+        { group: 'Domains', items: ['Pharma', 'R&D', 'Clinical Trials', 'EHR'] }
+      ],
+      experience: [
+        {
+          title: 'ZS Associates',
+          role: 'Technical Product and Project Manager',
+          location: 'Gurugram',
+          dates: 'Jul 2024 to Present',
+          bullets: [
+            ['Product', 'Owned a 2 plus year roadmap for I/E Criteria Optimizer from PoC to production with enterprise integration.'],
+            ['Outcome', '12 percent increase in eligible patient pool and 50 percent faster protocol review across 100 plus protocols. Won Most Innovative Project.'],
+            ['Delivery', 'Led a cross functional team of 8 and ran ceremonies, dependencies, and quality to hit milestones.']
+          ]
+        },
+        {
+          title: 'ZS Associates',
+          role: 'Associate Product and Project Manager',
+          dates: 'Jul 2022 to Jun 2024',
+          bullets: [
+            ['Product', 'Designed a Knowledge Graph powered CI chatbot across Citeline, CT.gov, and Clarivate for oncology insights.'],
+            ['Outcome', 'Real time clinical trial alerts cut detection from days to under 30 minutes.'],
+            ['Delivery', 'Built Snowflake ETL with SCD and delivered 10 plus market access reports in month one at 100 percent on time.']
+          ]
+        },
+        {
+          title: 'ZS Associates',
+          role: 'Business Technology Solutions Associate',
+          dates: 'Jul 2020 to Jun 2022',
+          bullets: [
+            ['Delivery', 'Engineered Specialty Pharmacy ETL and automated feedback tracker saving 15 plus hours weekly and 40 percent faster reporting.'],
+            ['Leadership', 'Progressed from Intern to leading a team of 2 to 3 across 20 plus vendors.']
+          ]
+        }
+      ],
+      cases: [
+        {
+          tag: 'I/E Criteria Optimizer',
+          product: 'Problem framing, roadmap, and adoption strategy for a trial protocol optimization tool.',
+          delivery: 'Team leadership across frontend, backend, API, DevOps with governance and compliance.',
+          impact: '12 percent more eligible patients, 50 percent faster reviews, 100 plus protocols optimized.'
+        },
+        {
+          tag: 'Clinical Data Review modernization',
+          product: 'Evaluation approach with value mapping and exec ready recommendations for platform choices.',
+          delivery: 'Databricks architecture design and cost model to target seven figure savings.',
+          impact: 'Potential savings of $1M plus yearly with performance improvements.'
+        },
+        {
+          tag: 'CI KG Chatbot',
+          product: 'Use cases and UX for oncology portfolio insights powered by a Knowledge Graph.',
+          delivery: 'Pipelines and alerting with hybrid vector plus KG search and under 30 minute latency.',
+          impact: 'Faster competitive intelligence to influence executive level strategy.'
+        }
+      ],
+      publications: [
+        { title: 'Crop Yield Prediction using Gradient Boosting Regression', venue: 'IJITEE', link: 'https://www.ijitee.org/portfolio-item/C8879019320/' }
+      ]
+    };
+
+    // Render helpers
+    function chip(text){ return `<span class="chip px-3 py-1 rounded-full text-sm bg-white dark:bg-gray-950">${text}</span>`; }
+
+    // Fill summary and about
+    document.getElementById('summary').textContent = profileData.summary;
+    document.getElementById('aboutText').innerHTML = `<p>${profileData.about}</p>`;
+
+    // Skills
+    const skillsWrap = document.getElementById('skillsWrap');
+    profileData.skills.forEach((s, i) => {
+      const chips = s.items.map(chip).join(' ');
+      skillsWrap.innerHTML += `
+        <div class="p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 card-hover" data-aos="fade-up" data-aos-delay="${i*60}">
+          <div class="flex items-center justify-between"><h3 class="font-bold text-lg">${s.group}</h3></div>
+          <div class="mt-3 flex flex-wrap gap-2">${chips}</div>
+        </div>`;
+    });
+
+    // Experience with dual tags
+    const expTimeline = document.getElementById('expTimeline');
+    profileData.experience.forEach(item => {
+      const bullets = item.bullets.map(([tag, text]) => `<li class="leading-relaxed"><span class="text-xs px-2 py-0.5 mr-2 rounded-full bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200">${tag}</span>${text}</li>`).join('');
+      expTimeline.innerHTML += `
+        <article class="relative p-6 rounded-2xl bg-white dark:bg-gray-950 border border-black/5 dark:border-white/10 card-hover">
+          <div class="absolute left-0 top-6 bottom-6 w-1 bg-gradient-to-b from-indigo-500 to-fuchsia-500 rounded-full opacity-70"></div>
+          <div class="pl-5">
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <h3 class="text-xl font-extrabold">${item.role}</h3>
+              <span class="text-sm px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-200">${item.title}</span>
+              ${item.location ? `<span class=\"text-sm text-gray-500\">${item.location}</span>` : ''}
+              <span class="text-sm text-gray-500">${item.dates}</span>
+            </div>
+            <ul class="mt-3 space-y-2 text-gray-700 dark:text-gray-300">${bullets}</ul>
+          </div>
+        </article>`;
+    });
+
+    // Case studies
+    const highlights = document.getElementById('highlights');
+    profileData.cases.forEach(c => {
+      highlights.innerHTML += `
+        <div class="p-5 rounded-2xl bg-white dark:bg-gray-950 border border-black/5 dark:border-white/10 card-hover tilt-card" data-aos="fade-up">
+          <div class="text-sm tracking-wider uppercase text-indigo-600 font-semibold">${c.tag}</div>
+          <p class="mt-2 text-gray-700 dark:text-gray-300"><span class="font-semibold">Product: </span>${c.product}</p>
+          <p class="mt-1 text-gray-700 dark:text-gray-300"><span class="font-semibold">Delivery: </span>${c.delivery}</p>
+          <p class="mt-1 text-gray-700 dark:text-gray-300"><span class="font-semibold">Impact: </span>${c.impact}</p>
+        </div>`;
+    });
+
+    // Publications
+    const pubs = document.getElementById('pubs');
+    profileData.publications.forEach(p => {
+      pubs.innerHTML += `<a class="block p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 card-hover" target="_blank" rel="noopener" href="${p.link}"><div class="text-lg font-bold">${p.title}</div><div class="text-sm text-gray-600 dark:text-gray-400">${p.venue}</div></a>`;
+    });
+
+    // AOS refresh after dynamic content
+    if (window.AOS) { AOS.refresh(); }
+
+    // Count up stats when visible
+    const counters = [document.getElementById('stat1'), document.getElementById('stat2'), document.getElementById('stat3')];
+    const animOpts = { duration: 900 };
+    function animateCount(el){
+      const target = Number(el.dataset.target || 0);
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const start = 0;
+      const t0 = performance.now();
+      function step(t){
+        const p = Math.min(1, (t - t0) / animOpts.duration);
+        const val = Math.floor(start + p * (target - start));
+        el.textContent = `${prefix}${val}${suffix}`;
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    const statObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting){ counters.forEach(c => animateCount(c)); statObs.disconnect(); } });
+    }, { threshold: 0.4 });
+    statObs.observe(document.getElementById('home'));
+
+    // Scroll progress bar
+    const progress = document.getElementById('scrollProgress');
+    function onScroll(){
+      const st = window.scrollY || document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const pct = Math.max(0, Math.min(1, st / h));
+      progress.style.width = `${pct * 100}%`;
+    }
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Active nav link on section
+    const sections = ['about','skills','experience','cases','publications','contact'];
+    const navLinks = Array.from(document.querySelectorAll('header nav a'));
+    const secObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting){
+          const id = e.target.id;
+          navLinks.forEach(a => a.classList.remove('active-link'));
+          const active = navLinks.find(a => a.getAttribute('href') === `#${id}`);
+          if (active) active.classList.add('active-link');
+        }
+      });
+    }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+    sections.forEach(id => { const el = document.getElementById(id); if (el) secObs.observe(el); });
+
+    // Parallax aura
+    const aura = document.getElementById('aura');
+    if (!prefersReduced && aura){
+      window.addEventListener('pointermove', (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 10;
+        const y = (e.clientY / window.innerHeight - 0.5) * 10;
+        aura.style.transform = `translate(${x}px, ${y}px)`;
+      }, { passive: true });
+    }
+
+    // Tilt on case cards
+    function attachTilt(el){
+      const rect = () => el.getBoundingClientRect();
+      function move(e){
+        const r = rect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        el.style.transform = `rotateX(${(-y*6).toFixed(2)}deg) rotateY(${(x*6).toFixed(2)}deg)`;
+      }
+      function leave(){ el.style.transform = 'rotateX(0) rotateY(0)'; }
+      el.addEventListener('mousemove', move);
+      el.addEventListener('mouseleave', leave);
+      el.addEventListener('touchmove', (e) => { if (e.touches[0]) move(e.touches[0]); }, { passive: true });
+      el.addEventListener('touchend', leave);
+    }
+    if (!prefersReduced){ document.querySelectorAll('.tilt-card').forEach(attachTilt); }
+  </script>
+</body>
+</html>
